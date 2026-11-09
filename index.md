@@ -1,19 +1,17 @@
-# (주제 확정 후 제목 작성)
+---
+layout: single
+title: "(주제 확정 후 제목 작성)"
+toc: true
+toc_label: "목차"
+toc_sticky: true
+---
 
 **Members**
 - 강현빈, 컴퓨터소프트웨어학부, 이메일
 - 전성민, 컴퓨터소프트웨어학부, 이메일
-- 정하랑, 컴퓨터소프트웨어학부, jungharang111@naver.com
+- 정하랑, 컴퓨터소프트웨어학부, jhr11@hanyang.ac.kr
 
 **발표 영상:** (추후 추가)
-
-## 목차
-- [I. Proposal](#proposal)
-- [II. Datasets](#datasets)
-- [III. Methodology](#methodology)
-- [IV. Evaluation & Analysis](#evaluation)
-- [V. Related Work](#related-work)
-- [VI. Conclusion](#conclusion)
 
 ---
 
