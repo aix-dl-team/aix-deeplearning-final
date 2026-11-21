@@ -1,0 +1,200 @@
+---
+# Jekyll이 이 파일을 처리하도록 하는 빈 front matter
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* ---------------------------------------------------------------
+   Unslop pass, 2026-11-21
+   Direction: calm and exact, numbers first. Code review paper:
+   graphite neutrals on white, one accent = GitHub merge green.
+   Signature: a small green status dot on the callout box.
+   Adapted from unslop by Damir Sokolovsky (@heydamir), CC BY 4.0.
+   --------------------------------------------------------------- */
+
+:root {
+  --bg: #fafafa;
+  --card: #ffffff;
+  --raised: #f4f4f5;
+  --line: rgba(23, 23, 23, 0.08);
+  --text: #171717;
+  --text-2: #525252;
+  --text-3: #737373;
+  --accent: #1a7f37;
+  --font: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Base: one family, Korean words never split mid-word */
+html, body { background: var(--bg); }
+body {
+  font-family: var(--font);
+  color: var(--text);
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6,
+.page__title, .masthead, .greedy-nav, .toc, .page__meta, .page__footer { font-family: var(--font); }
+
+/* Masthead: quiet bar with a hairline */
+.masthead { background: var(--bg); border-bottom: 1px solid var(--line); }
+.masthead__inner-wrap { padding-top: 16px; padding-bottom: 16px; }
+.greedy-nav { background: transparent; }
+.greedy-nav .site-title { font-size: 16px; font-weight: 600; color: var(--text); letter-spacing: 0; }
+
+/* Title and headings: hierarchy from size, weight capped at 600 */
+.page__title {
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin-bottom: 24px;
+}
+.page__content h2 {
+  font-size: 24px;
+  line-height: 1.35;
+  font-weight: 600;
+  margin-top: 64px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+.page__content h3 { font-size: 19px; line-height: 1.45; font-weight: 600; margin-top: 40px; margin-bottom: 12px; }
+.page__content h4 { font-size: 16px; font-weight: 600; margin-top: 32px; }
+
+/* Body text */
+.page__content p, .page__content li { font-size: 17px; line-height: 1.8; color: var(--text); }
+.page__content strong { font-weight: 600; }
+.page__content em { font-style: normal; color: var(--text-2); }
+.page__content a { color: var(--text); text-decoration-color: rgba(23,23,23,0.3); text-underline-offset: 3px; transition: color 150ms var(--ease), text-decoration-color 150ms var(--ease); }
+.page__content a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+.page__content hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+
+/* Callout: no fake italic, no cyan bar; a plain card with the signature dot */
+.page__content blockquote {
+  position: relative;
+  margin: 0 0 32px;
+  padding: 16px 20px 16px 40px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  font-style: normal;
+  color: var(--text-2);
+}
+.page__content blockquote p { font-size: 15px; line-height: 1.75; color: var(--text-2); margin: 0; }
+.page__content blockquote strong { color: var(--text); }
+.page__content blockquote::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+/* Figures: the moment. Charts sit on white cards */
+.page__content p > img,
+.page__content figure img {
+  display: block;
+  margin: 8px auto;
+  padding: 12px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+/* Tables: quiet header, hairlines, tabular figures */
+.page__content table {
+  display: table;
+  width: 100%;
+  margin: 16px 0 32px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+}
+.page__content thead { background: var(--raised); }
+.page__content th {
+  padding: 10px 12px;
+  font-weight: 500;
+  color: var(--text-2);
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  background: var(--raised);
+}
+.page__content td {
+  padding: 10px 12px;
+  line-height: 1.55;
+  border-bottom: 1px solid var(--line);
+  color: var(--text);
+}
+.page__content tr:last-child td { border-bottom: 0; }
+.page__content tbody tr:hover td { background: #fcfcfc; }
+
+/* Code: mono, small raised chip */
+.page__content code {
+  font-family: var(--mono);
+  font-size: 0.86em;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--raised);
+  color: var(--text);
+}
+.page__content pre, .page__content div.highlighter-rouge {
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
+.page__content pre code { padding: 0; background: transparent; }
+
+/* Table of contents: quiet card, selection gets the accent */
+.toc {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: none;
+  overflow: hidden;
+}
+.toc .nav__title {
+  background: transparent;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+}
+.toc .nav__title i, .toc .nav__title .fas { display: none; }
+.toc__menu a {
+  padding: 6px 16px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-2);
+  border-bottom: 0;
+  transition: color 150ms var(--ease), background-color 150ms var(--ease);
+}
+.toc__menu > li > a { font-weight: 500; color: var(--text); }
+.toc__menu li ul > li a { padding-left: 28px; }
+.toc__menu li ul li ul > li a { padding-left: 40px; }
+.toc__menu a:hover { background: var(--raised); color: var(--text); text-decoration: none; }
+.toc .nav__title { margin: 0; }
+.toc .active a { background: transparent; color: var(--text-2); }
+.toc .active > a { background: transparent; color: var(--text); }
+.toc__menu li.active > a, .toc__menu a.active { background: var(--raised); color: var(--accent); font-weight: 500; }
+.toc__menu li > ul { margin: 0; }
+
+/* Focus ring for keyboard users */
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+
+/* Footer */
+.page__footer { background: var(--bg); border-top: 1px solid var(--line); color: var(--text-3); }
