@@ -27,3 +27,8 @@
 - `results/models.json`은 `train_eval.py`로 한 번 학습한 결과이고, 피처 중요도(gain)를 볼 때 썼다.
 - 표본 PR 목록 `data/sample_ids.parquet`(학습 기간 3만 개, 평가 기간 3만 개를 무작위로 뽑은 것)은 이 폴더에 함께 올렸다. 다른 피처 파일과 diff 조각은 용량 때문에 올리지 않았다(위 순서대로 실행하면 다시 만들어진다). 이 폴더에서 실행하려면 `code/data`에 원래 프로젝트의 `data/` 내용이 있어야 한다.
 - 처리 시간은 같은 환경에서도 잴 때마다 흔들린다. `results/build_times.json`에 3번 잰 값을 모두 적었다.
+
+## 그 밖의 폴더
+
+- `api/`: 예측 API용 입력·출력 형식(`API_SPEC.md`), 학습과 똑같이 피처를 계산하는 `pr_features.py`, R1 모델 파일과 `predict.py`, 참고용 서버 예시. 백엔드 담당이 이 폴더를 가져다 쓴다.
+- `r3/`: CodeBERT 임베딩(R3) 실험 노트북(Colab용)과 실행 가이드. 표본 데이터 `r3_sample.parquet`(약 79MB)은 용량 때문에 저장소에 올리지 않고 따로 전달한다.

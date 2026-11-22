@@ -1,0 +1,13 @@
+{
+  "agent": "Claude_Code",
+  "title": "fix: handle empty config file",
+  "body": "빈 설정 파일을 읽을 때 생기는 오류를 고쳤습니다. 테스트를 추가했습니다.",
+  "repo": {"full_name": "example-org/example-repo", "stars": 350, "forks": 40, "language": "Python"},
+  "repo_prior_prs": 5,
+  "commits": [
+    {"sha": "a1b2c3d", "files": [
+      {"filename": "src/config.py", "additions": 12, "deletions": 3},
+      {"filename": "tests/test_config.py", "additions": 25, "deletions": 0}
+    ]}
+  ]
+}
