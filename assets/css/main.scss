@@ -100,6 +100,39 @@ h1, h2, h3, h4, h5, h6,
   background: var(--accent);
 }
 
+/* Section summary: a quiet raised card, read first */
+.page__content p.summary {
+  margin: 0 0 24px;
+  padding: 16px 20px;
+  background: var(--raised);
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 1.75;
+}
+.page__content p.summary strong:first-child { color: var(--accent); }
+
+/* Note: a plain card for caveats found during the work */
+.page__content p.note {
+  margin: 24px 0;
+  padding: 16px 20px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--text-2);
+}
+.page__content p.note strong { color: var(--text); }
+
+/* Figure caption: what to look at, directly under the chart */
+.page__content p.figcap {
+  margin: -4px 0 24px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text-2);
+}
+.page__content p.figcap strong { color: var(--text); font-weight: 500; }
+
 /* Figures: the moment. Charts sit on white cards */
 .page__content p > img,
 .page__content figure img {

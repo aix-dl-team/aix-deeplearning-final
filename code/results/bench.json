@@ -1,0 +1,50 @@
+{
+ "pr_pandas_all": {
+  "task": "pr_pandas_all",
+  "ok": false,
+  "sec_median": null,
+  "runs": 0,
+  "peak_rss_mb": 2220,
+  "error": "\uba54\ubaa8\ub9ac 2200MB \ucd08\uacfc\ub85c \uc911\ub2e8"
+ },
+ "pr_pandas_cols": {
+  "task": "pr_pandas_cols",
+  "ok": true,
+  "sec_median": 1.107469081878662,
+  "runs": 3,
+  "peak_rss_mb": 255,
+  "error": null
+ },
+ "pr_duckdb": {
+  "task": "pr_duckdb",
+  "ok": true,
+  "sec_median": 0.08018875122070312,
+  "runs": 3,
+  "peak_rss_mb": 44,
+  "error": null
+ },
+ "cd_duckdb": {
+  "task": "cd_duckdb",
+  "ok": true,
+  "sec_median": 0.6787915229797363,
+  "runs": 1,
+  "peak_rss_mb": 151,
+  "error": null
+ },
+ "cd_pandas_all": {
+  "task": "cd_pandas_all",
+  "ok": false,
+  "sec_median": null,
+  "runs": 0,
+  "peak_rss_mb": 2206,
+  "error": "\uba54\ubaa8\ub9ac 2200MB \ucd08\uacfc\ub85c \uc911\ub2e8"
+ },
+ "cd_pandas_cols": {
+  "task": "cd_pandas_cols",
+  "ok": true,
+  "sec_median": 1.6554687023162842,
+  "runs": 1,
+  "peak_rss_mb": 1090,
+  "error": null
+ }
+}

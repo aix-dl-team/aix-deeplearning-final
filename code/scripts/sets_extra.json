@@ -1,0 +1,94 @@
+{
+ "R1": {
+  "files": [
+   "features_r0",
+   "features_r1"
+  ],
+  "cat": [
+   "agent",
+   "lang",
+   "task",
+   "top_ext"
+  ],
+  "num": [
+   "stars",
+   "forks",
+   "repo_prior_prs",
+   "title_len",
+   "body_len",
+   "n_files",
+   "additions",
+   "deletions",
+   "log_churn",
+   "n_ext",
+   "has_test",
+   "test_line_share",
+   "doc_file_share"
+  ]
+ },
+ "R0_single": {
+  "files": [
+   "features_r0",
+   "features_r1"
+  ],
+  "filter": "n_commits == 1",
+  "cat": [
+   "agent",
+   "lang",
+   "task"
+  ],
+  "num": [
+   "stars",
+   "forks",
+   "repo_prior_prs",
+   "title_len",
+   "body_len"
+  ]
+ },
+ "R1_single": {
+  "files": [
+   "features_r0",
+   "features_r1"
+  ],
+  "filter": "n_commits == 1",
+  "cat": [
+   "agent",
+   "lang",
+   "task",
+   "top_ext"
+  ],
+  "num": [
+   "stars",
+   "forks",
+   "repo_prior_prs",
+   "title_len",
+   "body_len",
+   "n_files",
+   "additions",
+   "deletions",
+   "log_churn",
+   "n_ext",
+   "has_test",
+   "test_line_share",
+   "doc_file_share"
+  ]
+ },
+ "R0": {
+  "files": [
+   "features_r0",
+   "features_r1"
+  ],
+  "cat": [
+   "agent",
+   "lang",
+   "task"
+  ],
+  "num": [
+   "stars",
+   "forks",
+   "repo_prior_prs",
+   "title_len",
+   "body_len"
+  ]
+ }
+}

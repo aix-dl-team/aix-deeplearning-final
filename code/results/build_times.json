@@ -1,0 +1,3 @@
+{"note": "2026-11-22 build_r0.py, build_r1.py 각각 3번 실행한 벽시계 시간(초). 4코어 가상 환경, 원본 parquet은 맥 폴더 마운트.",
+ "build_r0_sec": [11.9, 9.0, 5.6], "build_r1_sec": [15.2, 9.9, 11.0],
+ "n_pr_r0_input": 361296, "n_pr_r1_input": 359735}

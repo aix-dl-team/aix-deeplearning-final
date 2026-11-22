@@ -1,0 +1,137 @@
+{
+ "by_agent": [
+  {
+   "agent": "Claude_Code",
+   "med_churn": 194.0,
+   "med_files": 4.0,
+   "test_rate": 0.43507602609544355
+  },
+  {
+   "agent": "Copilot",
+   "med_churn": 166.0,
+   "med_files": 4.0,
+   "test_rate": 0.4417291414752116
+  },
+  {
+   "agent": "OpenAI_Codex",
+   "med_churn": 118.0,
+   "med_files": 4.0,
+   "test_rate": 0.5081180123169842
+  },
+  {
+   "agent": "Cursor",
+   "med_churn": 167.0,
+   "med_files": 4.0,
+   "test_rate": 0.33487733745067766
+  },
+  {
+   "agent": "Devin",
+   "med_churn": 140.0,
+   "med_files": 3.0,
+   "test_rate": 0.3420458819104927
+  },
+  {
+   "agent": "Google_Jules",
+   "med_churn": 117.0,
+   "med_files": 3.0,
+   "test_rate": 0.37157960199004975
+  }
+ ],
+ "n_no_file_changes": 8119,
+ "merge_rate_no_file_changes": 0.0534548589727799,
+ "no_file_by_agent": {
+  "Copilot": 7982,
+  "Claude_Code": 78,
+  "OpenAI_Codex": 28,
+  "Google_Jules": 19,
+  "Cursor": 6,
+  "Devin": 6
+ },
+ "n_code_changing_closed": 322889,
+ "merge_by_test": [
+  {
+   "agent": "Claude_Code",
+   "has_test": 0,
+   "mean": 0.7971675058820855,
+   "count": 87979
+  },
+  {
+   "agent": "Claude_Code",
+   "has_test": 1,
+   "mean": 0.7803621766016795,
+   "count": 67757
+  },
+  {
+   "agent": "Copilot",
+   "has_test": 0,
+   "mean": 0.7175377417747839,
+   "count": 46169
+  },
+  {
+   "agent": "Copilot",
+   "has_test": 1,
+   "mean": 0.7142700719936492,
+   "count": 36531
+  },
+  {
+   "agent": "Cursor",
+   "has_test": 0,
+   "mean": 0.63992777921073,
+   "count": 7754
+  },
+  {
+   "agent": "Cursor",
+   "has_test": 1,
+   "mean": 0.6429303278688525,
+   "count": 3904
+  },
+  {
+   "agent": "Devin",
+   "has_test": 0,
+   "mean": 0.649042583595313,
+   "count": 6998
+  },
+  {
+   "agent": "Devin",
+   "has_test": 1,
+   "mean": 0.5634964266080263,
+   "count": 3638
+  },
+  {
+   "agent": "Google_Jules",
+   "has_test": 0,
+   "mean": 0.6269173676397823,
+   "count": 2021
+  },
+  {
+   "agent": "Google_Jules",
+   "has_test": 1,
+   "mean": 0.6744769874476988,
+   "count": 1195
+  },
+  {
+   "agent": "OpenAI_Codex",
+   "has_test": 0,
+   "mean": 0.8047114820818818,
+   "count": 28993
+  },
+  {
+   "agent": "OpenAI_Codex",
+   "has_test": 1,
+   "mean": 0.7959933222036728,
+   "count": 29950
+  }
+ ],
+ "merge_by_test_all": [
+  {
+   "has_test": 0,
+   "mean": 0.7634981157664217,
+   "count": 179914
+  },
+  {
+   "has_test": 1,
+   "mean": 0.756593810106662,
+   "count": 142975
+  }
+ ]
+}
