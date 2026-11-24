@@ -32,3 +32,4 @@
 
 - `api/`: 예측 API용 입력·출력 형식(`API_SPEC.md`), 학습과 똑같이 피처를 계산하는 `pr_features.py`, R1 모델 파일과 `predict.py`, 참고용 서버 예시. 백엔드 담당이 이 폴더를 가져다 쓴다.
 - `r3/`: CodeBERT 임베딩(R3) 실험 노트북(Colab용)과 실행 가이드. 표본 데이터 `r3_sample.parquet`(약 79MB)은 용량 때문에 저장소에 올리지 않고 따로 전달한다.
+- `results/r3_hyunbin/`: R3(CodeBERT) 실험 결과. `r3/r3_codebert.ipynb`를 구글 Colab(T4 GPU)에서 돌린 결과(`r3_results.json`, 평가 PR 3만 개 예측 `r3_preds.parquet`). 블로그 결과 3의 숫자는 여기서 왔다.
